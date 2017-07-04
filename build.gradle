@@ -16,6 +16,7 @@ version '1.0.0-SNAPSHOT'
 
 apply plugin: 'groovy'
 apply plugin: 'java'
+apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
 
@@ -42,9 +43,9 @@ dependencies {
 
     compile('org.codehaus.groovy:groovy-all:2.4.7')
     compile("org.springframework.boot:spring-boot-starter-log4j2")
-    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter")
     compile("org.springframework.boot:spring-boot-starter-aop")
-    compile("org.springframework.boot:spring-boot-starter-freemarker")
+//    compile("org.springframework.boot:spring-boot-starter-freemarker")
 
 
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.7.4'

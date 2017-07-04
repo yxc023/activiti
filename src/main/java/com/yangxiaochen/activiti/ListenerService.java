@@ -29,6 +29,7 @@ public class ListenerService {
      * @param key           通过或驳回key
      */
     public void autoCompleteByDefinitionKey(DelegateTask task, String definitionKey, String key) {
+        TaskCompleteCache.completingTaskIds().add(task.getId());
         logger.info("autoCompleteByDefinitionKey, task.id:{}", task.getId());
         String instanceId = task.getProcessInstanceId();
         Task taskTemp = taskService.createTaskQuery().processInstanceId(instanceId).taskDefinitionKey(definitionKey).singleResult();

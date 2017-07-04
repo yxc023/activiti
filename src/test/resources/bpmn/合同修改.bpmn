@@ -12,7 +12,7 @@
         <activiti:taskListener event="complete" expression="#{listenerService.autoCompleteByDefinitionKey(task, 'managerTask', 'AUDIT_FLAG')}"></activiti:taskListener>
       </extensionElements>
     </userTask>
-    <endEvent id="endevent1" name="驳回" activiti:async="true"></endEvent>
+    <endEvent id="endevent1" name="驳回"></endEvent>
     <endEvent id="endevent2" name="通过"></endEvent>
     <parallelGateway id="parallelgateway1" name="Parallel Gateway"></parallelGateway>
     <parallelGateway id="parallelgateway2" name="Parallel Gateway"></parallelGateway>
